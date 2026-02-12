@@ -19,14 +19,4 @@ with col1:
 with col2:
     st.button("No ❌", disabled=True)  # Απενεργοποιημένο κουμπί
 
-# Προσθέτουμε λίγο στυλ για πιο cute εμφάνιση
-st.markdown(
-    """
-    <style>
-    body {
-        background-color: #ffe6f0;
-    }
-    </style>
-    """,
-    unsafe_allow_html=True
-)
+
