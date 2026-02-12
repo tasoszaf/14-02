@@ -10,10 +10,8 @@ yes_clicked = st.button("Yes 💖")
 
 if yes_clicked:
     st.success("Yay! It's a date! 💕")
-    st.markdown("<h2 style='color: red;'>I ❤️ you!</h2>", unsafe_allow_html=True)
-
     # Εμφάνιση φωτογραφίας
-    st.image("success.jpg", caption="For you ❤️", use_column_width=True)
+    st.image("success.jpg")
 
 # Κουμπί No απενεργοποιημένο
 st.button("No ❌", disabled=True)
