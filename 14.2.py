@@ -4,7 +4,7 @@ import streamlit as st
 st.set_page_config(page_title="Be My Valentine 💖", page_icon="❤️", layout="centered")
 
 # Τίτλος και οδηγίες
-st.markdown("<h1 style='text-align: center; color: pink;'>Will you be my Valentine? 💌</h1>", unsafe_allow_html=True)
+st.markdown("<h1 style='text-align: center; color: pink;'>Annie Tzavella Will you be my Valentine? 💌</h1>", unsafe_allow_html=True)
 st.markdown("<p style='text-align: center;'>Choose wisely...</p>", unsafe_allow_html=True)
 
 # Δημιουργία δύο στηλών για τα κουμπιά
