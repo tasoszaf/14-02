@@ -18,7 +18,6 @@ with col1:
 
 with col2:
     st.button("No ❌", disabled=True)  # Απενεργοποιημένο κουμπί
-    st.write("YOU ARE OFFICIALLY MY DATE!!!")  # Προαιρετικό σχόλιο
 
 # Προσθέτουμε λίγο στυλ για πιο cute εμφάνιση
 st.markdown(
