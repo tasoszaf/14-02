@@ -4,25 +4,20 @@ import streamlit as st
 st.set_page_config(page_title="Be My Valentine 💖", page_icon="❤️", layout="centered")
 
 # Τίτλος και οδηγίες
-st.markdown("<h1 style='text-align: center; color: pink;'>Annie tzavella will you be my Valentine? 💌</h1>", unsafe_allow_html=True)
+st.markdown("<h1 style='text-align: center; color: pink;'>Annie Tzavella will you be my Valentine? 💌</h1>", unsafe_allow_html=True)
 st.markdown("<p style='text-align: center;'>Choose wisely...</p>", unsafe_allow_html=True)
 
-# Κουμπιά κεντραρισμένα
-st.markdown("""
-<div style='text-align: center; margin-top: 30px;'>
-    <form>
-        <input type="submit" value="Yes 💖" style="padding: 10px 30px; font-size: 18px; margin-right: 20px;" onclick="window.parent.postMessage({funcName:'yes_clicked'}, '*')">
-        <input type="submit" value="No ❌" style="padding: 10px 30px; font-size: 18px;" disabled>
-    </form>
-</div>
-""", unsafe_allow_html=True)
+# Δημιουργία δύο στηλών για τα κουμπιά
+col1, col2 = st.columns(2)
 
-# Streamlit διαχείριση του Yes κουμπιού
-yes_clicked = st.button("Yes 💖")
-if yes_clicked:
-    st.success("Yay! It's a date! 💕")
-    st.markdown("<h2 style='color: red;'>I ❤️ you!</h2>", unsafe_allow_html=True)
+with col1:
+    if st.button("Yes 💖"):
+        st.balloons()  # Confetti effect
+        st.success("Yay! It's a date! 💕")
+        st.markdown("<h2 style='color: red;'>I ❤️ you!</h2>", unsafe_allow_html=True)
 
+with col2:
+    st.button("No ❌", disabled=True)  # Απενεργοποιημένο κουμπί
 
 # Προσθέτουμε λίγο στυλ για πιο cute εμφάνιση
 st.markdown(
